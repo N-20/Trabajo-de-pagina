@@ -19,37 +19,154 @@ Cada una de estas instrucciones son requisitos para poder revisar su evaluación
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
-    <!--Pon Boostrap Aqui-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    <!--Pon Boostrap css Aqui-->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
     crossorigin="anonymous">
+    <!--Mi Css-->
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <!--Para El Logo-->
+              <a class="navbar-brand" href="/trabajo.html">
+                <img src="img/logo.png" alt="M&A" style="width: 60%;">
+              </a>
+              <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!--Cosas para navegar -->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Pre">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Vid">Video de muestra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Equip">El Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Con">¡Contactanos!</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        </div>
+    </nav>
+
+    <!--Header  Creo-->
+    <header class="main-header">
+      <div class="background-overlay text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center justify-content-center align-self-center">  
+              <h1>M&D Life</h1>
+              <p>La Foto Que Buscabas</p>
+              <a href="#" class="btn btn-outline-secondary">
+                Leer Mas
+              </a>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </header>
 
-    <!--Pon Java Al Final-->
+    <!--Un Acordion???-->
+    <section class="container text-center p-5">
+      <div class="row">
+        <div class="accordion" id="accordion1">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Como Funciona el servicio?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
+              <div class="card-body">
+                Nuestro equipo trabaja en un formato de envio , Al aceptar nuestros servicios enviaremos un equipo de fotografos especializados 
+                a la localiacion acordada , los cuale se encargaran de tomar las fotos y posteriormente enmarcadas.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Porque usar el servicio?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+              <div class="card-body">
+                hbdsgsdfbfdsbfdgsfdbsfdbfdsgfdsgsfdg
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 ¿Como los contacto?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="text-center team">
+      <div class="container p-5">
+        <h1 class="text-center text-black">Equipo</h1>
+        <p class="text-black">
+
+        </p>
+       
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/perfil.png" class="img-fluid rounded-circle w-50">
+                <h3>Alvaro Ordenes</h3>
+                <p>
+                  Programador sin experiencia.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://twitter.com/home">Pagina De Twitter</a>
+          <a href="https://youtu.be/zqPjPE7edro">Canal de Youtube</a>
+          <a href="https://www.instagram.com/?hl=en">Pagina De Instagram</a>
+
+
+          <video width="100" controls>
+            <source src="vid/A very happy wolf.mp4" type="video/mp4">
+            <source src="vid/A very happy wolf.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+    </section>
 </body>
 </html>
